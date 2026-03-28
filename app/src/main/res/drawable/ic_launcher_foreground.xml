@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Macau Travel Logger icon — white teardrop map pin with dark-green M.
+  Viewport 108×108. Background layer remains solid #00785A.
+
+  Pin shape:  smooth teardrop, widest at y≈46, tip at (54,98)
+  M letter:   bold sans-serif path centred at (54,44), x=36–72, y=28–58
+              white-pin fill is #00785A so the letter "cuts into" the pin
+-->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <!-- White teardrop map pin -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M54,10 C32,10 16,26 16,46 C16,68 54,98 54,98
+                          C54,98 92,68 92,46 C92,26 76,10 54,10Z" />
+
+    <!--
+      Bold M path (filled #00785A — dark green on white pin).
+      Vertices (clockwise outline of the letter):
+        (36,58) bottom-left outer
+        (36,28) top-left outer
+        (43,28) top-left inner  → start of left diagonal
+        (54,51) outer V tip
+        (65,28) top-right inner → start of right diagonal
+        (72,28) top-right outer
+        (72,58) bottom-right outer
+        (65,58) bottom-right inner
+        (54,43) inner V tip
+        (43,58) bottom-left inner
+      Stroke width: 7 units vertical/horizontal; diagonals ≈ 7–8 units perpendicular.
+    -->
+    <path
+        android:fillColor="#00785A"
+        android:pathData="M 36,58 L 36,28 L 43,28 L 54,51
+                          L 65,28 L 72,28 L 72,58
+                          L 65,58 L 54,43 L 43,58 Z" />
+
+</vector>
